@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片-热门日韩影库</title>
+  <meta name="description" content="搜索热门日韩影片、高清播放内容、精选影片与影片片库关键词。">
+  <meta name="keywords" content="影片搜索,热门日韩影片,日韩影片,热门电影,高清播放,精选影片,影片片库">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="./index.html" aria-label="热门日韩影库">
+      <span class="logo-mark">影</span>
+      <span class="logo-text">热门日韩影库</span>
+    </a>
+    <nav class="desktop-nav">
+      <a class="nav-link " href="./index.html">首页</a>
+<a class="nav-link " href="./categories.html">分类</a>
+<a class="nav-link " href="./ranking.html">排行榜</a>
+<a class="nav-link " href="./category-japanese-korean.html">日韩精选</a>
+<a class="nav-link " href="./category-hot-movies.html">热门电影</a>
+<a class="nav-link " href="./category-hd-cinema.html">高清片库</a>
+<a class="nav-link " href="./category-top-rated.html">口碑佳作</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <div class="container mobile-panel-inner">
+      <form class="mobile-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+      <nav class="mobile-nav">
+        <a class="mobile-link " href="./index.html">首页</a>
+<a class="mobile-link " href="./categories.html">分类</a>
+<a class="mobile-link " href="./ranking.html">排行榜</a>
+<a class="mobile-link " href="./category-japanese-korean.html">日韩精选</a>
+<a class="mobile-link " href="./category-hot-movies.html">热门电影</a>
+<a class="mobile-link " href="./category-hd-cinema.html">高清片库</a>
+<a class="mobile-link " href="./category-top-rated.html">口碑佳作</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="inner-hero gradient-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="./index.html">首页</a><span>/</span>搜索</nav>
+      <span class="eyebrow light">Search</span>
+      <h1>搜索影片</h1>
+      <p>按片名、类型、地区、标签与简介关键词检索片库内容。</p>
+    </div>
+  </section>
+  <section class="container page-section search-page" data-search-page>
+    <form class="wide-search search-page-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="输入关键词搜索影片" autocomplete="off" data-search-input>
+      <button type="submit">搜索</button>
+    </form>
+    <div class="search-status" data-search-status>输入关键词查找影片</div>
+    <div class="movie-grid" data-search-results></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">
+        <span class="logo-mark">影</span>
+        <span>热门日韩影库</span>
+      </div>
+      <p>聚合热门日韩影片内容，按热度、类型和口碑展示相关电影栏目。</p>
+    </div>
+    <div>
+      <h3>快速入口</h3>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索影片</a>
+    </div>
+    <div>
+      <h3>影片分类</h3>
+      <a href="./category-japanese-korean.html">日韩精选</a>
+<a href="./category-hot-movies.html">热门电影</a>
+<a href="./category-hd-cinema.html">高清片库</a>
+<a href="./category-top-rated.html">口碑佳作</a>
+<a href="./category-romance-comedy.html">爱情喜剧</a>
+<a href="./category-suspense-sci-fi.html">悬疑科幻</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-drama-art.html">剧情文艺</a>
+    </div>
+    <div>
+      <h3>精选栏目</h3>
+      <p>围绕热门日韩影片、高清播放、精选片库与口碑内容，提供清晰的浏览入口。</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">© 2026 热门日韩影库. All Rights Reserved.</div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

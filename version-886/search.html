@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-推荐电视剧大全-精选剧集片库</title>
+  <meta name="description" content="搜索精选剧集片库，按片名、题材、地区、年份快速查找内容。">
+  <meta name="keywords" content="推荐电视剧大全,精选剧集片库,全集高清在线播放,推荐电视剧,电视剧大全,精选剧集,剧集片库">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="site-logo" href="./index.html" aria-label="高清剧集大全">
+      <span class="logo-mark">剧</span>
+      <span class="logo-text">高清剧集大全</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./rankings.html">排行</a><a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索你感兴趣的内容" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-button" type="button" aria-label="展开导航" data-menu-button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./rankings.html">排行</a>
+    <a href="./search.html">搜索</a>
+  </div>
+</header>
+<main>
+  <section class="page-hero small">
+    <div class="container">
+      <p class="eyebrow">影片搜索</p>
+      <h1>搜索精选剧集片库</h1>
+      <p>支持按片名、题材、地区、年份、标签进行筛选。</p>
+      <form class="wide-search page-search" action="search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="输入关键词搜索" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container">
+      <div class="search-tools">
+        <select data-search-type aria-label="类型筛选">
+          <option value="">全部类型</option>
+          <option value="电影">电影</option>
+          <option value="电视剧">电视剧</option>
+          <option value="纪录片">纪录片</option>
+        </select>
+        <select data-search-year aria-label="年份筛选">
+          <option value="">全部年份</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+        </select>
+      </div>
+      <div class="movie-grid archive-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-logo" href="./index.html">高清剧集大全</a>
+      <p>精选剧集片库按题材、热度与口碑整理影视内容，呈现清晰流畅的浏览体验。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./categories.html">分类片库</a>
+      <a href="./rankings.html">热度排行</a>
+      <a href="./search.html">影片搜索</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js" defer></script>
+<script src="./assets/movies.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
